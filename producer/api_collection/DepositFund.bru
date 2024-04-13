@@ -1,0 +1,18 @@
+meta {
+  name: DepositFund
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{API_URL}}/depositfund
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "ID" : "54e4ef30-7eae-42dc-b582-a0f1c5b8ef86",
+      "Amount": 1000
+  }
+}

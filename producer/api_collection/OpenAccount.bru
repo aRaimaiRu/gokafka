@@ -1,0 +1,19 @@
+meta {
+  name: OpenAccount
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/openaccount
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "AccountHolder": "test_first",
+    "AccountType": 1,
+    "OpeningBalance": 100
+  }
+}
